@@ -41,4 +41,29 @@ void main(List<String> arguments) {
     break;
   }
 
+  //print(sumaDosNumeros(1, 2));
+
+  print(fibonacci(5));
+
 }
+
+int fibonacci (int numeroPosicion){
+  int a = 0;
+  int b = 1;
+  int suma = 0;
+  if(numeroPosicion == b){
+    return a;
+  }else if(numeroPosicion <= 3){
+    return b;
+  }else{
+    for (int i = 0; i < numeroPosicion - 2; i++){
+      suma = a+b;
+      a = b;
+      b = suma;
+    }
+    return suma;
+  }
+}
+  int sumaDosNumeros(int numberOne, int numberTwo){
+      return numberOne + numberTwo;
+  }
